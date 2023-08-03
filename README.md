@@ -1,4 +1,4 @@
-# cording
+# Cording
 1. <a href="https://github.com/kimTH65/cording/issues/1">코딩 문제 풀이 (BackJoon) - Python</a> <br>
 
 2. <a href="https://github.com/kimTH65/cording/issues/2">코딩 문제 풀이 (BackJoon) - Python</a> <br>
