@@ -19,5 +19,7 @@
 17. <a href="https://github.com/kimTH65/cording/issues/17">코딩 문제 풀이 (BackJoon) - C#</a> <br>
 18. <a href="https://github.com/kimTH65/cording/issues/18">코딩 문제 풀이 (BackJoon) - Python</a> <br>
 19. <a href="https://github.com/kimTH65/cording/issues/19">코딩 문제 풀이 (BackJoon) - Python</a> <br>
+20. <a href="https://github.com/kimTH65/cording/issues/20">코딩 문제 풀이 (BackJoon) - Python</a> <br>
+21. <a href="https://github.com/kimTH65/cording/issues/21">코딩 문제 풀이 (BackJoon) - Python</a> <br>
 
 
