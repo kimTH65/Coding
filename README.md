@@ -21,6 +21,6 @@
 19. <a href="https://github.com/kimTH65/cording/issues/19">Coding Test Solution (BackJoon) - Python</a> <br>
 20. <a href="https://github.com/kimTH65/cording/issues/20">Coding Test Solution (BackJoon) - Python</a> <br>
 21. <a href="https://github.com/kimTH65/cording/issues/21">Coding Test Solution (BackJoon) - Python</a> <br>
-22. <a href="https://github.com/kimTH65/cording/issues/22">코딩 문제 풀이 (BackJoon) - Python</a> <br>
+22. <a href="https://github.com/kimTH65/cording/issues/22">Coding Test Solution (BackJoon) - Python</a> <br>
 
 
