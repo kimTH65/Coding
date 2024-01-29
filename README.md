@@ -23,4 +23,4 @@
 21. <a href="https://github.com/kimTH65/cording/issues/21">Coding Test Solution (BackJoon) - Python</a> <br>
 22. <a href="https://github.com/kimTH65/cording/issues/22">Coding Test Solution (BackJoon) - Python</a> <br>
 23. <a href="https://github.com/kimTH65/cording/issues/23">Coding Test Solution (AtCoder) - Python</a> <br>
-
+24. <a href="https://github.com/kimTH65/cording/issues/24">Coding Test Solution (AtCoder) - Python</a> <br>
