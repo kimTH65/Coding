@@ -1,13 +1,7 @@
+import copy
 N,M = map(int,input().split())
 graph =[]
-max_ans = 100
-
-def dfs(graph,visit,check_ans):
-    
-    for i in range(len(visit)):
-        if visit[i] == 0:
-            graph[i]
-
+answer = N
 
 for _ in range(N) :
     S = str(input())
@@ -18,12 +12,28 @@ for _ in range(N) :
     graph.append(li)
 print(graph)
 
+def dfs(visit,check_ans):
+    print(visit)
+
+    if sum(check_ans) == M:
+        print(sum(visit))
+        return
+    for i in range(len(visit)):
+        v = copy.deepcopy(visit)
+        ch = copy.deepcopy(check_ans)
+        if v[i] == 0 :
+            v[i] = 1
+            for g in graph[i] :
+                ch[g-1] = 1
+            dfs(v,ch)
+
 for i in range(len(graph)) :
     visit = [0 for i in range(N)]
     check_ans = [0 for i in range(M)]
     visit[i] = 1
+    
     for g in graph[i] :
         check_ans[g-1] = 1
         
-    dfs(graph,visit,check_ans)
-
+    print("--------------")
+    dfs(visit,check_ans)
