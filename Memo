@@ -10,14 +10,15 @@ for _ in range(N) :
         if S[i] == "o" :
             li.append(i+1)
     graph.append(li)
-print(graph)
 
-def dfs(visit,check_ans):
-    print(visit)
-
+def dfs(count,visit,check_ans):
+    global answer
+    count += 1
     if sum(check_ans) == M:
-        print(sum(visit))
+        if answer > count:
+            answer = count
         return
+            
     for i in range(len(visit)):
         v = copy.deepcopy(visit)
         ch = copy.deepcopy(check_ans)
@@ -25,7 +26,7 @@ def dfs(visit,check_ans):
             v[i] = 1
             for g in graph[i] :
                 ch[g-1] = 1
-            dfs(v,ch)
+            dfs(count,v,ch)
 
 for i in range(len(graph)) :
     visit = [0 for i in range(N)]
@@ -35,5 +36,6 @@ for i in range(len(graph)) :
     for g in graph[i] :
         check_ans[g-1] = 1
         
-    print("--------------")
-    dfs(visit,check_ans)
+    dfs(0,visit,check_ans)
+
+print(answer)
