@@ -1,0 +1,29 @@
+N,M = map(int,input().split())
+graph =[]
+max_ans = 100
+
+def dfs(graph,visit,check_ans):
+    
+    for i in range(len(visit)):
+        if visit[i] == 0:
+            graph[i]
+
+
+for _ in range(N) :
+    S = str(input())
+    li = []
+    for i in range(len(S)) :
+        if S[i] == "o" :
+            li.append(i+1)
+    graph.append(li)
+print(graph)
+
+for i in range(len(graph)) :
+    visit = [0 for i in range(N)]
+    check_ans = [0 for i in range(M)]
+    visit[i] = 1
+    for g in graph[i] :
+        check_ans[g-1] = 1
+        
+    dfs(graph,visit,check_ans)
+
