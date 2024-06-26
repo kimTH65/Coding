@@ -1,3 +1,4 @@
+dfs -> bfs 변경할것
 import copy
 N,M = map(int,input().split())
 graph =[]
