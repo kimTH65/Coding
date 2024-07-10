@@ -1,42 +1,19 @@
-dfs -> bfs 변경할것
-import copy
-N,M = map(int,input().split())
-graph =[]
-answer = N
+N = int(input())
+N_list = dict();
+A = list(map(int,input().split()))
+W = list(map(int,input().split()))
+answer = 0
 
-for _ in range(N) :
-    S = str(input())
-    li = []
-    for i in range(len(S)) :
-        if S[i] == "o" :
-            li.append(i+1)
-    graph.append(li)
 
-def dfs(count,visit,check_ans):
-    global answer
-    count += 1
-    if sum(check_ans) == M:
-        if answer > count:
-            answer = count
-        return
-            
-    for i in range(len(visit)):
-        v = copy.deepcopy(visit)
-        ch = copy.deepcopy(check_ans)
-        if v[i] == 0 :
-            v[i] = 1
-            for g in graph[i] :
-                ch[g-1] = 1
-            dfs(count,v,ch)
+for i in range(N):
+    if A[i] in N_list :
+        N_list[A[i]].append(W[i])
+    else :
+        N_list[A[i]] = [W[i]]
 
-for i in range(len(graph)) :
-    visit = [0 for i in range(N)]
-    check_ans = [0 for i in range(M)]
-    visit[i] = 1
-    
-    for g in graph[i] :
-        check_ans[g-1] = 1
-        
-    dfs(0,visit,check_ans)
+print(N_list)
+for k, v in N_list.items():
+    while len(v) >1 :
+   
 
-print(answer)
+len(v)
