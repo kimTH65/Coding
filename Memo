@@ -1,3 +1,6 @@
+C - Move It
+https://atcoder.jp/contests/abc360/tasks/abc360_c
+
 N = int(input())
 N_list = dict();
 A = list(map(int,input().split()))
