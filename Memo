@@ -1,1 +1,22 @@
 
+from collections import deque
+
+N,M = map(int,input().split())
+
+a_maxLen = M - ((N-1)*10) 
+
+s= [i for i in range(1,a_maxLen+1)]
+
+def ser(s,floor):
+     que = deque(s)
+     print(que)
+     while que :
+         if floor > N-1:
+             break
+         sel = que.pop(0)
+         for i in range(1+floor*10, a_maxLen+floor*10+1):
+             sel.append(i)
+             que.append(sel)
+     
+
+ser(s,1)
