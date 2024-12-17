@@ -1,6 +1,5 @@
 # Coding
 1. <a href="https://github.com/kimTH65/cording/issues/1">Coding Test Solution (BackJoon) - Python</a> <br>
-
 2. <a href="https://github.com/kimTH65/cording/issues/2">Coding Test Solution (BackJoon) - Python</a> <br>
 3. <a href="https://github.com/kimTH65/cording/issues/3">Coding Test Solution (BackJoon) - Python</a> <br>
 4. <a href="https://github.com/kimTH65/cording/issues/4">Coding Test Solution (BackJoon) - Python</a> <br>
