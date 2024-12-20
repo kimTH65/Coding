@@ -28,3 +28,4 @@
 27. <a href="https://github.com/kimTH65/cording/issues/27">Coding Test Solution (AtCoder) - Python</a> <br>
 28. <a href="https://github.com/kimTH65/cording/issues/28">Coding Test Solution (AtCoder) - Python</a> <br>
 29. <a href="https://github.com/kimTH65/cording/issues/29">Coding Test Solution (AtCoder) - Python</a> <br>
+30. <a href="https://github.com/kimTH65/cording/issues/30">Coding Test Solution (AtCoder) - Python</a> <br>
