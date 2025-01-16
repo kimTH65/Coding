@@ -28,6 +28,30 @@ for i in range(len(a_list)):
 
 print(answer)
 
-
+<hr>
 
 https://atcoder.jp/contests/abc387/tasks/abc387_c
+
+L,R = map(int,input().split())
+num_list = [i for i in range(1,10)]
+num_calc = [i for i in range(1,10)]
+
+
+def calc_count(sel):
+
+
+    max_len = len(str(sel))-1
+    snake = sel//(10**max_len)
+    print(snake)
+    m = 10
+    for i in range (max_len):
+        if i == 0 :
+            print(num_calc)
+            continue
+        for i in range(1,m):
+            num_calc[i-1] *=i 
+        print(num_calc)
+        
+    print(max_len)
+
+calc_count(L)
