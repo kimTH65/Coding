@@ -32,25 +32,40 @@ print(answer)
 https://atcoder.jp/contests/abc387/tasks/abc387_c
 
 L,R = map(int,input().split())
-num_list = [i for i in range(1,10)]
-num_calc = [i for i in range(1,10)]
+
+def calc_count(sel,set_t):
+    num_calc = [i for i in range(1,10)]
+    s_str = list(str(sel))
+    snake_sum = 1
+    for i in range(1,len(s_str)) :
+        if int(s_str[i]) > int(s_str[0]):
+            snake_sum *= int(s_str[1])
+        else :
+            snake_sum *= int(s_str[i])+1
+    print("snake_sum:"+str(snake_sum))
+
+    set_t = 
 
 
-def calc_count(sel):
-
-
+    calc_sum = 0
     max_len = len(str(sel))-1
     snake = sel//(10**max_len)
-    print(snake)
     m = 10
     for i in range (max_len):
-        if i == 0 :
-            print(num_calc)
-            continue
-        for i in range(1,m):
-            num_calc[i-1] *=i 
+        if i == max_len-1 :
+            m = snake 
+        for j in range(1,m):
+            if i > 0 :
+                num_calc[j-1] *=j 
+            calc_sum += num_calc[j-1]
+            
+            print(num_calc[j-1])
+            
+                
         print(num_calc)
         
-    print(max_len)
-
-calc_count(L)
+    print("calc_sum:"+str(calc_sum))
+    print("=================")
+    return snake_sum+ calc_sum
+    
+print(calc_count(R)-calc_count(L))
