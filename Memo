@@ -70,3 +70,4 @@ def calc_count(sel,set_t):
     return snake_sum+ calc_sum
     
 print(calc_count(R)-calc_count(L))
+<hr/>
