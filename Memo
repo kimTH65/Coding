@@ -81,11 +81,13 @@ x = [W,0]
 y = [H,0]
 s_arr = []
 ans = "Yes"
+c = 0
 for i in range(H) :
     S = list(input())
     s_a = []
     for j in range(len(S)) :
         if S[j] == "#" :
+            c += 1
             s_a.append(1)
             if y[0] > i+1 :
                 y[0] = i+1
@@ -101,11 +103,19 @@ for i in range(H) :
             s_a.append(1)
         
     s_arr.append(s_a)
-
+if x[0] == x[1] :
+    x[1] +=1
+if y[0] == y[1] :
+    y[1] +=1
 for i in range(y[0]-1,y[1]-1):
     for j in range(x[0]-1,x[1]-1):
         if s_arr[i][j] == 0 :
             ans = "No"
             break
+
+if c == 0 :
+    ans = "No"
+    
 print(ans)
+    
 
