@@ -28,7 +28,7 @@ for i in range(len(a_list)):
 
 print(answer)
 
-<hr>
+============================================================
 
 https://atcoder.jp/contests/abc387/tasks/abc387_c
 
