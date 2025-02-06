@@ -73,10 +73,39 @@ print(calc_count(R)-calc_count(L))
 
 
 ============================================================
+AtCoder Beginner Contest 390
+C - Paint to make a rectangle
 
 H, W = map(int,input().split())
-h_arr = [ 0 for i in range(H)]
-w_arr = [ 0 for i in range(W)]
+x = [W,0]
+y = [H,0]
+s_arr = []
+ans = "Yes"
 for i in range(H) :
- print(input())
+    S = list(input())
+    s_a = []
+    for j in range(len(S)) :
+        if S[j] == "#" :
+            s_a.append(1)
+            if y[0] > i+1 :
+                y[0] = i+1
+            if y[1] < i+1 :
+                y[1] = i+1
+            if x[0] > j+1 :
+                x[0] = j+1
+            if x[1] < j+1 :
+                x[1] = j+1 
+        elif S[j] == "." :
+            s_a.append(0)
+        else :
+            s_a.append(1)
+        
+    s_arr.append(s_a)
+
+for i in range(y[0]-1,y[1]-1):
+    for j in range(x[0]-1,x[1]-1):
+        if s_arr[i][j] == 0 :
+            ans = "No"
+            break
+print(ans)
 
